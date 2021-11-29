@@ -1,0 +1,66 @@
+<div class="card text-center" style="width: 30rem;">
+  <ul class="nav nav-tabs justify-content-center">
+    <li class="nav-item">
+        <a class="nav-link" routerLink="/navigator" [queryParams]="{tab:0}">Income</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" routerLink="/navigator" [queryParams]="{tab:1}">Outcome</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" routerLink="/navigator" [queryParams]="{tab:2}">Loans</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" routerLink="/navigator" [queryParams]="{tab:3}">Investments</a>
+    </li>
+  </ul>
+
+    <div *ngIf="condition0" class="d-flex justify-content-around">
+        <div class="col" >
+            <div class="row justify-content-around">
+                <p>Name</p>
+                <p>Account</p>
+            </div>
+            <div class="row justify-content-around" *ngFor="let item of items">
+                <p>{{item.name}}</p>
+                <p>{{item.num}}</p>
+            </div>
+        </div>
+    </div>
+    <div *ngIf="condition1" class="d-flex justify-content-around">
+        <div class="col" >
+            <div class="row justify-content-around">
+                <p>Name</p>
+                <p>Account</p>
+            </div>
+            <div class="row justify-content-around" *ngFor="let item of items">
+                <p>{{item.name}}</p>
+                <p>{{item.num}}</p>
+            </div>
+        </div>
+    </div>
+    <div *ngIf="condition2" class="d-flex justify-content-around">
+        <div class="col" >
+            <div class="row justify-content-around">
+                <p>Name</p>
+                <p>Account</p>
+            </div>
+            <div class="row justify-content-around" *ngFor="let item of items">
+                <p>{{item.name}}</p>
+                <p>{{item.num}}</p>
+            </div>
+        </div>
+    </div>
+    <div *ngIf="condition3" class="d-flex justify-content-around">
+        <div class="col" >
+            <div class="row justify-content-around">
+                <p>Name</p>
+                <p>Account</p>
+            </div>
+            <div class="row justify-content-around" *ngFor="let item of items">
+                <p>{{item.name}}</p>
+                <p>{{item.num}}</p>
+            </div>
+        </div>
+    </div>
+
+</div>
